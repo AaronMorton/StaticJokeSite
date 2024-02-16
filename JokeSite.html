@@ -126,7 +126,7 @@
                 try {
                     const percentChooserOption = [
                         {name: 'haha what a good joke', percentage: 31},
-                        {name: 'this is a joke', percentage: 69 },
+                        {name: 'this is a joke. you are <b>laughing</b>.', percentage: 69 },
                     ];
 
                     if(percentChooserOptions.length < 2) {
@@ -174,7 +174,7 @@
                 }
 
                 // render out baby
-                document.querySelector('#important-message').innerText = randMessage;
+                document.querySelector('#important-message').innerHTML = randMessage;
             })();
         </script>
     </body>
